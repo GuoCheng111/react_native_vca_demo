@@ -1,0 +1,3 @@
+rootProject.name = 'vca_demo'
+
+include ':app'
