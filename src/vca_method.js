@@ -42,10 +42,13 @@ function checkStatus(response){
 function parseJSON(data){
     console.log('data.source = ' + data.source);
     console.log('data = ' + data );
+
+    return data;
 }
 
-class VcdData extends Component{  
+class VcaMethod extends Component{  
     getRequest(url){  
+        console.log('url = ' + url);
         try{
 			var auth = new BceAuth(ak, sk);
 			var authorization = auth.generateAuthorization(method, paths, params, headers);
@@ -120,4 +123,5 @@ const styles = StyleSheet.create({
 
     }  
 });  
-module.exports = VcdData;  
+
+module.exports = VcaMethod;  

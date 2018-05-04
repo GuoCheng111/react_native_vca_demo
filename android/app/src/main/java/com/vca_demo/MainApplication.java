@@ -3,6 +3,10 @@ package com.vca_demo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.brentvatne.react.ReactVideoPackage;
+// import com.tradle.react.UdpSocketsModule;
+// import com.peel.react.TcpSocketsModule;
+// import com.peel.react.RNOSModule;
 import com.bitgo.randombytes.RandomBytesPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -24,6 +28,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactVideoPackage(),
+            // new UdpSocketsModule(),
+            // new TcpSocketsModule(),
+            // new RNOSModule(),
             new RandomBytesPackage()
       );
     }
